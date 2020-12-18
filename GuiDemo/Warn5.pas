@@ -9,35 +9,26 @@ uses
 type
   TWarn5Form = class(TForm)
     btnWarnFive: TButton;
-    procedure btnWarnFiveClick(Sender: TObject);
-  private
-    fValue: Integer;
   public
-    class function Execute: Integer;
+    fValue: Integer;
+    procedure Execute;
   end;
 
 implementation
 
 {$R *.dfm}
 
+uses
+  Xml.XMLIntf;
+
 { TWarn5Form }
 
-class function TWarn5Form.Execute: Integer;
+procedure TWarn5Form.Execute;
 var
-  vForm: TWarn5Form;
+  vXml: IXMLDocument;
 begin
-  vForm := TWarn5Form.Create(nil);
-  vForm.fValue := 5;
-  if vForm.ShowModal = mrOK then
-    Result := vForm.fValue
-  else
-    Result := 0;
-end;
-
-procedure TWarn5Form.btnWarnFiveClick(Sender: TObject);
-begin
-  if fValue = 5 then
-    fValue := 10;
+  if vXml <> nil then
+   ShowMessage('xml');
 end;
 
 end.

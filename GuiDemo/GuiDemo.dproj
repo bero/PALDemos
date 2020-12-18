@@ -106,6 +106,18 @@
             <Form>Warn5Form</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="Warn9.pas">
+            <Form>Warn9Form</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="CONV18.pas">
+            <Form>Conv18Form</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="STWA5.pas">
+            <Form>STWA5Form</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

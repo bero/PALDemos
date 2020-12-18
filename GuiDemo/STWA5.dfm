@@ -1,7 +1,7 @@
-object Warn5Form: TWarn5Form
+object STWA5Form: TSTWA5Form
   Left = 0
   Top = 0
-  Caption = 'Warn5'
+  Caption = 'STWA5Form'
   ClientHeight = 284
   ClientWidth = 634
   Color = clBtnFace
@@ -13,13 +13,4 @@ object Warn5Form: TWarn5Form
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object btnWarnFive: TButton
-    Left = 472
-    Top = 208
-    Width = 75
-    Height = 25
-    Caption = 'Ok'
-    ModalResult = 1
-    TabOrder = 0
-  end
 end
