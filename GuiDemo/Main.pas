@@ -12,10 +12,12 @@ type
     btnWarn9: TButton;
     btnConv18: TButton;
     btnSTWA5: TButton;
+    btnForms: TButton;
     procedure btnWarn5Click(Sender: TObject);
     procedure btnWarn9Click(Sender: TObject);
     procedure btnConv18Click(Sender: TObject);
     procedure btnSTWA5Click(Sender: TObject);
+    procedure btnFormsClick(Sender: TObject);
   public
     class procedure Execute;
   end;
@@ -25,7 +27,7 @@ implementation
 {$R *.dfm}
 
 uses
-  Warn5, Warn9, Conv18, STWA5;
+  Warn5, Warn9, Conv18, STWA5, frmSub;
 
 procedure TMainForm.btnWarn9Click(Sender: TObject);
 begin
@@ -49,6 +51,18 @@ begin
     ShowModal;
   finally
     free;
+  end;
+end;
+
+procedure TMainForm.btnFormsClick(Sender: TObject);
+var
+  vForm: TSubForm;
+begin
+  vForm := TSubForm.Create(nil);
+  try
+    vForm.ShowModal;
+  finally
+    vForm.Free;
   end;
 end;
 

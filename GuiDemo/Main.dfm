@@ -2,7 +2,7 @@ object MainForm: TMainForm
   Left = 0
   Top = 0
   Caption = 'PAL False positive'
-  ClientHeight = 181
+  ClientHeight = 210
   ClientWidth = 170
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -48,5 +48,14 @@ object MainForm: TMainForm
     Caption = 'STWA5'
     TabOrder = 3
     OnClick = btnSTWA5Click
+  end
+  object btnForms: TButton
+    Left = 48
+    Top = 148
+    Width = 75
+    Height = 25
+    Caption = 'Forms'
+    TabOrder = 4
+    OnClick = btnFormsClick
   end
 end

@@ -6,7 +6,9 @@ uses
   Warn5 in 'Warn5.pas' {Warn5Form},
   Warn9 in 'Warn9.pas' {Warn9Form},
   CONV18 in 'CONV18.pas' {Conv18Form},
-  STWA5 in 'STWA5.pas' {STWA5Form};
+  STWA5 in 'STWA5.pas' {STWA5Form},
+  frmBase in 'frmBase.pas' {BaseForm},
+  frmSub in 'frmSub.pas' {SubForm};
 
 {$R *.res}
 
